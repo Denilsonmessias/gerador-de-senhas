@@ -1,0 +1,106 @@
+body {
+    background-color: rgb(27, 1, 1);
+    text-align: center;
+    margin-top: 12%;
+}
+
+h1 {
+    color: rgb(231, 241, 241);
+    font-size: 55px;
+    font-family: Impact;
+    letter-spacing: 3px;
+    padding: 3px;
+}
+
+p {
+    color: darkgray;
+    font-size: 20px;
+    font-family: verdana;
+    padding: 3px;
+}
+
+#tam {
+    height: 10px;
+    width: 250px;
+    border-radius: 10px;
+    background:rgb(216, 212, 157);
+    -webkit-appearance: none;
+    cursor:pointer;
+    transition: transform 0.5s;
+}
+
+#tam:hover {
+    transform: scale(1.08);
+}
+
+.gerar {
+    margin-top: 10px;
+    color: white;
+    font-size: 16px;
+    font-family: verdana;
+    background:green ;
+    height: 34px;
+    width: 250px;
+    border-radius: 15px;
+    border:1px solid #fafcfa;
+    cursor:pointer;
+    text-shadow: 3px 3px 5px black;
+    transition: transform 0.5s;
+}
+
+.gerar:hover {
+    transform: scale(1.04);
+}
+
+.res {
+    max-width: 480px;
+    margin: 14px 480px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    cursor: default;
+    color: white;
+    font-size: 16px;
+    font-family: verdana;
+}
+
+.hi {
+    display: none;
+}
+
+.senha {
+    background: #000;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    align-items: center;
+    width: 350px;
+    cursor: pointer;
+    transition: transform 0.7s;
+    border:1px solid #fafcfa;
+}
+
+.senha:hover {
+    transform: scale(1.05);
+}
+
+.last {
+    background: #000;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 350px;
+    border:1px solid #fafcfa;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+#resultado:hover .last {
+    visibility: visible;
+    bottom: 50px;
+    opacity: 1;
+}
